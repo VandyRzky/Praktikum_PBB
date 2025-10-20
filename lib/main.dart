@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gotravel/pages/welcome/welcome.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,15 +14,23 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primaryColor: Color(0xFF0194F3),
-        scaffoldBackgroundColor: Color(0xFFFEFCFF),
-        textTheme: TextTheme(
-          bodySmall: TextStyle(fontSize: 12, color: Color(0xFF707071), fontWeight: FontWeight.w400),
-          bodyMedium: TextStyle(fontSize: 16, color: Color(0xFF000000), fontWeight:  FontWeight.w600),
-          bodyLarge: TextStyle(fontSize: 20, color: Color(0xFF000000), fontWeight: FontWeight.w600)
-        )
+        colorScheme: ColorScheme(
+          brightness: Brightness.light,
+          primary: const Color(0xFF0194F3),
+          onPrimary: Colors.white,
+          secondary: const Color(0xFF707071),
+          onSecondary: Colors.white,
+          background: const Color(0xFFFEFCFF),
+          onBackground: const Color(0xFF000000),
+          surface: Colors.white,
+          onSurface: const Color(0xFF000000),
+          error: Colors.red,
+          onError: Colors.white,
+        ),
+        primaryColor: const Color(0xFF0194F3),
+        scaffoldBackgroundColor: const Color(0xFFFEFCFF),
       ),
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: WelcomePage(),
     );
   }
 }

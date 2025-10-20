@@ -1,0 +1,58 @@
+
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:gotravel/pages/welcome/welcome_slider.dart';
+
+
+class WelcomePage extends StatelessWidget{
+  final Map<String, String> messages = {
+    "Temukan Keindahan di Setiap Destinasi":"Nikmati pengalaman berwisata yang mudah dan menyenangkan hanya dalam genggaman tanganmu.",
+    "Pesan Tiket Wisata Tanpa Ribet":"Dapatkan tiket ke tempat wisata favoritmu hanya dalam beberapa klik — aman, cepat, dan praktis.",
+    "Satu Aplikasi, Ribuan Tempat Seru":"Dari pantai, pegunungan, hingga taman hiburan — temukan semuanya di sini."
+  };
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      body: SafeArea(
+          child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+              child:Center(child:
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Spacer(flex: 1,),
+                  Image.asset('assets/welcome.png', height: 250,),
+                  // SizedBox(height: 25,),
+                  const Spacer(flex: 2,),
+                  WelcomeSlider(message: messages),
+                  SizedBox(height: 20,),
+                  ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Theme.of(context).primaryColor,
+                        padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15,),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8)
+                        )
+                      ),
+                      onPressed: (){
+                        // Belum dibuat
+                      },
+                      child: Center(
+                          child: Text(
+                            "LOGIN", style: GoogleFonts.plusJakartaSans(color: Theme.of(context).colorScheme.onPrimary),
+                          )
+                      )
+                  )
+                ],
+              ),
+          )
+          )
+      ),
+    );
+  }
+
+}
