@@ -35,7 +35,7 @@ class WelcomePage extends StatelessWidget{
                         backgroundColor: Theme.of(context).primaryColor,
                         padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15,),
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8)
+                          borderRadius: BorderRadius.circular(8),
                         )
                       ),
                       onPressed: (){
@@ -43,7 +43,31 @@ class WelcomePage extends StatelessWidget{
                       },
                       child: Center(
                           child: Text(
-                            "LOGIN", style: GoogleFonts.plusJakartaSans(color: Theme.of(context).colorScheme.onPrimary),
+                            "LOGIN", style: GoogleFonts.plusJakartaSans(color: Theme.of(context).colorScheme.onPrimary,
+                          fontSize: 16, fontWeight: FontWeight.w600),
+                          )
+                      )
+                  ),
+                  SizedBox(height: 15,),
+                  ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: Theme.of(context).colorScheme.onPrimary,
+                          padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15,),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                            side: BorderSide(
+                              color: Theme.of(context).colorScheme.primary,
+                              width: 0.5
+                            )
+                          )
+                      ),
+                      onPressed: (){
+                        // Belum dibuat
+                      },
+                      child: Center(
+                          child: Text(
+                            "SIGN UP", style: GoogleFonts.plusJakartaSans(color: Theme.of(context).primaryColor,
+                              fontSize: 16, fontWeight: FontWeight.w600),
                           )
                       )
                   )
