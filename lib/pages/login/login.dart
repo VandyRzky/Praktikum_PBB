@@ -139,7 +139,9 @@ class _LoginState extends State<Login>{
                         style: TextButton.styleFrom(
                             overlayColor: Colors.transparent
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/signup');
+                        },
                         child: Text("Daftar"))
                   ],
                 )

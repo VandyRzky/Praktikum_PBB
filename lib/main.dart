@@ -32,7 +32,13 @@ class MyApp extends StatelessWidget {
         primaryColor: const Color(0xFF0194F3),
         scaffoldBackgroundColor: const Color(0xFFFEFCFF),
       ),
-      home: SignUp(),
+      routes: {
+        '/': (context) => WelcomePage(),
+        '/login': (context) => Login(),
+        '/signup': (context) => SignUp()
+      },
+      initialRoute: '/',
+      // home: SignUp(),
     );
   }
 }

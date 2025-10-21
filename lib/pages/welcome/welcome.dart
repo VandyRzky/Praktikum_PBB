@@ -39,7 +39,8 @@ class WelcomePage extends StatelessWidget{
                         )
                       ),
                       onPressed: (){
-                        // Belum dibuat
+                        // Login
+                        Navigator.pushNamed(context, '/login');
                       },
                       child: Center(
                           child: Text(
@@ -62,7 +63,8 @@ class WelcomePage extends StatelessWidget{
                           )
                       ),
                       onPressed: (){
-                        // Belum dibuat
+                        // Signup
+                        Navigator.pushNamed(context, '/signup');
                       },
                       child: Center(
                           child: Text(
