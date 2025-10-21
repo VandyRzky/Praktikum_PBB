@@ -32,7 +32,7 @@ class _LoginState extends State<Login>{
 
                 Spacer(flex: 2,),
                 Center(
-                  child: Image.asset('assets/welcome.png', height: 200,),
+                  child: Image.asset('assets/login-ills.png', height: 200,),
                 ),
                 Spacer(flex: 5,),
                 Text("E-mail",
@@ -76,7 +76,7 @@ class _LoginState extends State<Login>{
                             color: Theme.of(context).colorScheme.secondary.withOpacity(0.8),
                             width: 1.5),
                       ),
-                      prefixIcon: Icon(Icons.email_outlined, color: Theme.of(context).colorScheme.onBackground,)
+                      prefixIcon: Icon(Icons.key_outlined, color: Theme.of(context).colorScheme.onBackground,)
                   ),
                 ),
                 Row(
