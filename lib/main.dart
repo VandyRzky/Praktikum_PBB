@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gotravel/pages/login/login.dart';
-import 'package:gotravel/pages/signup/signup.dar.dart';
+import 'package:gotravel/pages/signup/signup.dart';
 import 'package:gotravel/pages/welcome/welcome.dart';
 
 void main() {
