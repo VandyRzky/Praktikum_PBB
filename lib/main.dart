@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gotravel/pages/login/login.dart';
+import 'package:gotravel/pages/signup/signup.dar.dart';
 import 'package:gotravel/pages/welcome/welcome.dart';
 
 void main() {
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         primaryColor: const Color(0xFF0194F3),
         scaffoldBackgroundColor: const Color(0xFFFEFCFF),
       ),
-      home: Login(),
+      home: SignUp(),
     );
   }
 }
