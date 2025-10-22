@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
           onError: Colors.white,
         ),
         primaryColor: const Color(0xFF0194F3),
-        scaffoldBackgroundColor: const Color(0xFFFEFCFF),
+        scaffoldBackgroundColor: const Color(0xFFF7F5F6),
       ),
       debugShowCheckedModeBanner: false,
       // routes: {

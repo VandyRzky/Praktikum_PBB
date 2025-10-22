@@ -26,7 +26,8 @@ class _LoginState extends State<Login>{
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Selamat Datang Kembali!",
-                  style: GoogleFonts.plusJakartaSans(fontSize: 20, fontWeight: FontWeight.w600, color: Theme.of(context).colorScheme.onBackground),),
+                  style: GoogleFonts.plusJakartaSans(fontSize: 20,
+                      fontWeight: FontWeight.w600, color: Theme.of(context).colorScheme.onBackground),),
                 Text("Siap menjelajahi tempat wisata impianmu hari ini?",
                   style: GoogleFonts.plusJakartaSans(fontSize: 12, fontWeight: FontWeight.w400, color: Theme.of(context).colorScheme.secondary),),
 

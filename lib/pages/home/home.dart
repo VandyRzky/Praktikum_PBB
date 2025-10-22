@@ -1,6 +1,10 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:gotravel/pages/home/home_for_you.dart';
+import 'package:gotravel/pages/home/home_near_by.dart';
+import 'package:gotravel/pages/home/home_recommendation.dart';
 
 class Home extends StatefulWidget{
   @override
@@ -13,6 +17,7 @@ class _HomeState extends State<Home>{
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         flexibleSpace: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
             child: Row(
@@ -25,9 +30,57 @@ class _HomeState extends State<Home>{
             ),
         ),
       ),
+      body: SafeArea(
+          child:
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 6),
+            child: ListView(
+              children: [
+                Text("Sedang Ramai Dikunjungi",
+                style: GoogleFonts.plusJakartaSans(fontSize: 20,
+                fontWeight: FontWeight.w600, color: Theme.of(context).colorScheme.onBackground),
+                ),
+                SizedBox(height: 8,),
+                HomeRecommendation(),
+                SizedBox(height: 12,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text("Terdekat dengan anda",
+                      style: GoogleFonts.plusJakartaSans(fontSize: 16,
+                          fontWeight: FontWeight.w600, color: Theme.of(context).colorScheme.onBackground),
+                    ),
+                    Text("Lihat Semua", style: GoogleFonts.plusJakartaSans(fontSize: 16,
+                        fontWeight: FontWeight.w600, color: Theme.of(context).colorScheme.primary),)
+                  ],
+                ),
+                SizedBox(height: 8,),
+                NearByContainer(),
+                SizedBox(height: 12,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text("Untuk anda",
+                      style: GoogleFonts.plusJakartaSans(fontSize: 16,
+                          fontWeight: FontWeight.w600, color: Theme.of(context).colorScheme.onBackground),
+                    ),
+                    Text("Lihat Semua", style: GoogleFonts.plusJakartaSans(fontSize: 16,
+                        fontWeight: FontWeight.w600, color: Theme.of(context).colorScheme.primary),)
+                  ],
+                ),
+                SizedBox(height: 8,),
+                ForYouContainer(),
+                SizedBox(height: 10,)
+              ],
+            )
+          )
+      ),
       
       
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
