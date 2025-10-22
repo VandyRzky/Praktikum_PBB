@@ -21,13 +21,13 @@ class ForYou extends StatelessWidget{
             ),
           ]
       ),
-      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           ClipRRect(
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(8),
             child: Image.asset(
               item['image']!,
               width: double.infinity,
@@ -66,12 +66,12 @@ class ForYou extends StatelessWidget{
 class ForYouContainer extends StatelessWidget{
   final List <Map<String, String>> items = [
     {
-      'image': 'assets/welcome.png',
+      'image': 'assets/recommendation/rec1.png',
       'title': 'Tempat wisata',
       'subtitle': 'Rp. 50.000',
     },
     {
-      'image': 'assets/welcome.png',
+      'image': 'assets/recommendation/rec2.png',
       'title': 'Tempat wisata',
       'subtitle': 'Rp. 50.000',
     },

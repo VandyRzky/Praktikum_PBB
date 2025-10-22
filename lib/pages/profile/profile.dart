@@ -34,7 +34,7 @@ class Profile extends StatelessWidget{
                 children: [
                   ClipRRect(
                     borderRadius: BorderRadius.all(Radius.circular(50)),
-                    child: Image.asset('assets/welcome.png', width: 100, height: 100,),
+                    child: Image.asset('assets/null-profile.png', width: 100, height: 100,),
                   ),
                   SizedBox(width: 10,),
                   Column(

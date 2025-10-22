@@ -32,7 +32,7 @@ class NearBy extends StatelessWidget{
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ClipRRect(
-                borderRadius: BorderRadiusGeometry.all(Radius.circular(10)),
+                borderRadius: BorderRadius.circular(10),
                 child: Image.asset(items['image']!, width: 50, height: 50,)
                 ,
               ),
@@ -62,19 +62,19 @@ class NearBy extends StatelessWidget{
 class NearByContainer extends StatelessWidget{
   final List <Map<String, String>> items = [
     {
-      'image': 'assets/welcome.png',
+      'image': 'assets/recommendation/rec1.png',
       'title': 'Tempat wisata',
       'subtitle': 'Rp. 50.000',
       'range': '1.5km'
     },
     {
-      'image': 'assets/welcome.png',
+      'image': 'assets/recommendation/rec2.png',
       'title': 'Tempat wisata',
       'subtitle': 'Rp. 50.000',
       'range': '2.5km'
     },
     {
-      'image': 'assets/welcome.png',
+      'image': 'assets/recommendation/rec3.png',
       'title': 'Tempat wisata',
       'subtitle': 'Rp.50.000',
       'range': '2.0km'

@@ -15,17 +15,17 @@ class _HomeRecommendationState extends State<HomeRecommendation>{
   );
   final List<Map<String, String>> items = [
     {
-      'image': 'assets/welcome.png',
+      'image': 'assets/recommendation/rec1.png',
       'title': 'Tempat wisata',
       'subtitle': 'Rp. 50.000'
     },
     {
-      'image': 'assets/welcome.png',
+      'image': 'assets/recommendation/rec2.png',
       'title': 'Tempat wisata',
       'subtitle': 'Rp. 50.000'
     },
     {
-      'image': 'assets/welcome.png',
+      'image': 'assets/recommendation/rec3.png',
       'title': 'Tempat wisata',
       'subtitle': 'Rp. 50.000'
     },
