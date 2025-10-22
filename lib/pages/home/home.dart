@@ -6,6 +6,8 @@ import 'package:gotravel/pages/home/home_for_you.dart';
 import 'package:gotravel/pages/home/home_near_by.dart';
 import 'package:gotravel/pages/home/home_recommendation.dart';
 
+import '../profile/profile.dart';
+
 class Home extends StatefulWidget{
   @override
   _HomeState createState() => _HomeState();
@@ -31,10 +33,8 @@ class _HomeState extends State<Home>{
         ),
       ),
       body: SafeArea(
-          child:
-          Padding(
+          child: ListView(
             padding: EdgeInsets.symmetric(horizontal: 24, vertical: 6),
-            child: ListView(
               children: [
                 Text("Sedang Ramai Dikunjungi",
                 style: GoogleFonts.plusJakartaSans(fontSize: 20,
@@ -75,13 +75,22 @@ class _HomeState extends State<Home>{
                 SizedBox(height: 10,)
               ],
             )
-          )
+
       ),
       
       
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         type: BottomNavigationBarType.fixed,
+        currentIndex: 0,
+        onTap: (index){
+          if (index == 1){
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => Profile()),
+            );
+          }
+        },
         items: [
           BottomNavigationBarItem(
               icon: Icon(Icons.home), label: "Beranda"),

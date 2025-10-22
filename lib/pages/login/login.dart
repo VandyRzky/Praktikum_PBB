@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:gotravel/pages/home/home.dart';
 
 class Login extends StatefulWidget{
   @override
@@ -121,7 +122,10 @@ class _LoginState extends State<Login>{
                         )
                     ),
                     onPressed: (){
-                      // Belum dibuat
+                      Navigator.pushAndRemoveUntil(context,
+                          MaterialPageRoute(builder: (context) => Home()),
+                            (Route<dynamic> route) => false,
+                      );
                     },
                     child: Center(
                         child: Text(

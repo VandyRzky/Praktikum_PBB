@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gotravel/pages/home/home.dart';
 import 'package:gotravel/pages/login/login.dart';
+import 'package:gotravel/pages/profile/profile.dart';
 import 'package:gotravel/pages/signup/signup.dart';
 import 'package:gotravel/pages/welcome/welcome.dart';
 
@@ -34,13 +35,15 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFFF7F5F6),
       ),
       debugShowCheckedModeBanner: false,
-      // routes: {
-      //   '/': (context) => WelcomePage(),
-      //   '/login': (context) => Login(),
-      //   '/signup': (context) => SignUp()
-      // },
-      // initialRoute: '/',
-      home: Home(),
+      routes: {
+        '/': (context) => WelcomePage(),
+        '/login': (context) => Login(),
+        '/signup': (context) => SignUp(),
+        '/home': (context) => Home(),
+        '/profile': (context) => Profile(),
+      },
+      initialRoute: '/',
+
     );
   }
 }
